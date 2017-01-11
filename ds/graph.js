@@ -167,5 +167,3 @@ var UndirectedGraph = {
 
 module.exports.Edge = Edge; 
 module.exports.Vertex = Vertex; 
-module.exports.UndirectedGraph = UndirectedGraph;
-module.exports.createVerticesFromArray = createVerticesFromArray; 
