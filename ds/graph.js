@@ -92,14 +92,14 @@ var UndirectedGraph = {
      @return: true if vertex was added, false if not (due to error or because it already 
        existed in graph). 
    */ 
-  // addVertex: function(vertex) {
-  //   if (!(vertex in this.vertices)) {
-  //     this.vertices[vertex] = vertex;
-  //     this.edges[vertex] = {}; 
-  //     return true; 
-  //   }
-  //   return false; 
-  // },
+   addVertex: function(vertex) {
+     if (!(vertex in this.vertices)) {
+       this.vertices[vertex] = vertex;
+       this.edges[vertex] = {}; 
+       return true; 
+     }
+     return false; 
+   },
 
   // Removes the given `vertex` and all incident edges to
   // it from the graph. 
@@ -169,3 +169,4 @@ module.exports.Edge = Edge;
 module.exports.Vertex = Vertex; 
 module.exports.UndirectedGraph = UndirectedGraph;
 module.exports.createVerticesFromArray = createVerticesFromArray; 
+
