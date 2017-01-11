@@ -1,5 +1,7 @@
 'use strict'
 
+// I ADDED THIS COMMENT - MAX 2016
+
 var _ = require('lodash'); 
 
 // Helper method that takes an array of content and creates vertices
