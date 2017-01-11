@@ -92,7 +92,7 @@ var UndirectedGraph = {
      @return: true if vertex was added, false if not (due to error or because it already 
        existed in graph). 
    */ 
-  addVertex: function(vertex) {
+  aweseomAddVertex: function(vertex) {
     if (!(vertex in this.vertices)) {
       this.vertices[vertex] = vertex;
       this.edges[vertex] = {}; 
