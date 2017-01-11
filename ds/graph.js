@@ -55,13 +55,13 @@ var UndirectedGraph = {
   // The dictionary itself maps string representations of vertices
   // to some non-false value.
   // eg. below represents edges between (vertex1,vertex2), (vertex1, vertex3) and (vertex4, vertex5)
-  // edges: {
-  //   vertex1: { vertex2: {}, vertex3: {} }
-  //   vertex2: { vertex1: {} }
-  //   vertex3: { vertex1: {} }
-  //   vertex4: { vertex5: {} }
-  //   vertex5: { vertex4: {} }
-  // }
+   edges: {
+     vertex1: { vertex2: {}, vertex3: {} }
+     vertex2: { vertex1: {} }
+     vertex3: { vertex1: {} }
+     vertex4: { vertex5: {} }
+     vertex5: { vertex4: {} }
+   }
   edges: null, 
 
 
@@ -92,14 +92,14 @@ var UndirectedGraph = {
      @return: true if vertex was added, false if not (due to error or because it already 
        existed in graph). 
    */ 
-  // addVertex: function(vertex) {
-  //   if (!(vertex in this.vertices)) {
-  //     this.vertices[vertex] = vertex;
-  //     this.edges[vertex] = {}; 
-  //     return true; 
-  //   }
-  //   return false; 
-  // },
+   addVertex: function(vertex) {
+     if (!(vertex in this.vertices)) {
+       this.vertices[vertex] = vertex;
+       this.edges[vertex] = {}; 
+       return true; 
+     }
+     return false; 
+   },
 
   // Removes the given `vertex` and all incident edges to
   // it from the graph. 
