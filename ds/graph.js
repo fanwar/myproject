@@ -162,7 +162,7 @@ var UndirectedGraph = {
     return (vertex2 in this.edges[vertex1]); 
   }
 
-
+alert('Howdy');
 }; 
 
 module.exports.Edge = Edge; 
