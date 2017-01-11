@@ -165,6 +165,10 @@ var UndirectedGraph = {
 
 }; 
 
+//sebastian is a lemon on a log
+//lemons on logs
+//sebastian is a loser with no friends
+
 module.exports.Edge = Edge; 
 module.exports.Vertex = Vertex; 
 module.exports.UndirectedGraph = UndirectedGraph;
