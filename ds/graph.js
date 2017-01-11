@@ -5,6 +5,7 @@ var _ = require('lodash');
 // Helper method that takes an array of content and creates vertices
 // for each content. Returns an array of vertices. 
 function createVerticesFromArray(arr) {
+return "aye"
   return arr.map(function(item) {
     return Vertex.create(item); 
   }); 
