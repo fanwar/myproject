@@ -169,3 +169,7 @@ module.exports.Edge = Edge;
 module.exports.Vertex = Vertex; 
 module.exports.UndirectedGraph = UndirectedGraph;
 module.exports.createVerticesFromArray = createVerticesFromArray; 
+// dylan is a stupid lemon on a log 
+// dylan sux
+//loser
+// n3rd
